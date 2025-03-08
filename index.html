@@ -1,12 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
-  <meta charset="UTF-8">
-   <link href="style.css" rel="stylesheet" type="text/css" />
-  <title>GuessMaster-WebApp</title>
+    <meta charset="UTF-8">
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+    <title>GuessMaster-WebApp</title>
 </head>
 <body>
-$END$
+<h1>Guess Master</h1>
+
+<div id="instructions">
+    <h2>How to Play</h2>
+    <p>Try to guess a number between <strong>1 and 100</strong>. </p>
+    <p>After each guess, you will get a hint whether the number is <strong>too high</strong> or <strong>too low</strong>.</p>
+    <p>You have <strong>10 attempts</strong> to find the correct number!</p>
+    <p>If you guess it in <strong>4 or fewer attempts</strong>, you are a <strong>Great Guesser!</strong> 🎯</p>
+</div>
+
+
+<form id="guessForm">
+    <input id="guess" type="number" min="1" max="100" placeholder="Guess a number"/>
+    <button type="submit" class="submit-btn">Submit</button>
+</form>
+
+<p id="numberSubmitted"></p>
+
+<h2 id="results"></h2>
+
+<h2 id="attempts"></h2>
+<h2 id="hint"></h2>
+<h2 id ="info"></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <script src="script.js"></script>
 </body>
 </html>
